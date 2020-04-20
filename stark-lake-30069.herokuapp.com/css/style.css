@@ -33,7 +33,7 @@ img {
 }
 
 
-/* média query */
+/* mÃ©dia query */
 @media only screen and (min-width: 260px) {
 
     #container {
@@ -78,8 +78,8 @@ img {
 
 
 /* config para a borda que separa o content do footer */
-.borda-falsa {
-    height: .16rem;
+#borda-falsa {
+    height: 0.16rem;
     background: #fff;
     background: linear-gradient(to right, #910011 100%,#e2001b 0%,#910011 20%);
     animation-name: borda-falsa;
@@ -149,7 +149,7 @@ img {
 }
 
 
-/* média query */
+/* mÃ©dia query */
 @media only screen and (min-width: 768px) {
 
     .card {

@@ -24,7 +24,7 @@ require 'vendor/autoload.php';
                     alt="Marca do teatro Vila Velha: um sol com um rosto simpático">
                    <a href="javascript:void(0);" onclick="myFunction()"><i class="icon" ></i> </a>
                 </header>
-                <nav id="nav">
+                <nav id="nav" class="borda-falsa">
                     <ul>
                         <li class="item"><a href="#">Conta</a></li>
                         <li class="item"><a href="#">Doação</a></li>
@@ -35,7 +35,7 @@ require 'vendor/autoload.php';
             <!-- content -->
             <main id="main-content">
                 <section id="title">
-                    <div id="borda-falsa"></div>
+                    <div class="borda-falsa"></div>
                     <h1>Formas de ajudar</h1>
                 </section>
                 <section id="content">
@@ -65,7 +65,7 @@ require 'vendor/autoload.php';
                         Ducimus, cupiditate molestiae tenetur reiciendis debitis ut.</p>
                         <button type="submit">Loja</button>
                     </div>
-                    <div id="borda-falsa"></div>
+                    <div class="borda-falsa"></div>
                 </section>
             </main>
             <!-- /content -->
