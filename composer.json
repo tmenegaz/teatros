@@ -1,0 +1,22 @@
+{
+    "name": "tmenegaz/teatros",
+    "description": "formas de doaar recursos para teatros fechados em funcao do covid19",
+    "type": "project",
+    "require": {
+        "php": "^7.2",
+        "twig/twig": "^2.0.4",
+        "symfony/twig-bridge": "^3",
+        "monolog/monolog": "^1.22",
+        "symfony/flex": "^1.5@dev"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    },
+    "authors": [
+        {
+            "name": "tmenegaz",
+            "email": "tmenegaz77@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
