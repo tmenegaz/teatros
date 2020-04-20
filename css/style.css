@@ -95,6 +95,10 @@ img {
   80% {background: linear-gradient(to right, #910011 60%,#e2001b 80%,#910011 100%);}
   100% {background: linear-gradient(to right, #910011 80%,#e2001b 100%,#910011 0%);}
 }
+
+#topo .borda-falsa{
+    height: 3.16rem;
+}
 /* /config */
 
 #left {
