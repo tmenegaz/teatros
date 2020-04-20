@@ -1,0 +1,170 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ebebeb;
+    box-sizing: border-box;
+    align-content: center;
+    font-family: dinotcondregular,"Open Sans", sans-serif, Helvetica;
+}
+
+#logo {
+	display: flex;
+	justify-content: space-between;
+    margin-bottom: 1vw;
+}
+
+#logo a {
+    height: 100%;
+    width: auto;
+    align-self: flex-end;
+}
+
+#nav ul {
+    display: inherit;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+
+}
+
+img {
+    width: 55%;
+}
+
+
+/* média query */
+@media only screen and (min-width: 260px) {
+
+    #container {
+        display: grid;
+        background-color: #fff;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 0 5vw;
+        grid-template-areas: "topo"
+            "main-content"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #topo {
+        grid-area: topo;
+        overflow: hidden;
+    }
+
+    #main-content{
+        grid-area: main-content;
+        display: grid;
+        grid-template-areas: "title"
+        "content";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #footer {
+        grid-area: footer;
+    }
+}
+
+#title{
+    grid-area: title;
+}
+
+#content{
+    grid-area: content;
+}
+
+
+/* config para a borda que separa o content do footer */
+#borda-falsa {
+    height: .16rem;
+    background: #fff;
+    background: linear-gradient(to right, #910011 100%,#e2001b 0%,#910011 20%);
+    animation-name: borda-falsa;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes borda-falsa {
+  0% {background: linear-gradient(to right, #910011 100%,#e2001b 0%,#910011 20%);}
+  20% {background: linear-gradient(to right, #910011 0%,#e2001b 20%,#910011 40%);}
+  40% {background: linear-gradient(to right, #910011 20%,#e2001b 40%,#910011 60%);}
+  65% {background: linear-gradient(to right, #910011 40%,#e2001b 60%,#910011 80%);}
+  80% {background: linear-gradient(to right, #910011 60%,#e2001b 80%,#910011 100%);}
+  100% {background: linear-gradient(to right, #910011 80%,#e2001b 100%,#910011 0%);}
+}
+/* /config */
+
+#left {
+    grid-area: left;
+}
+
+#center {
+    grid-area: center;
+}
+
+#right {
+    grid-area: right;
+}
+
+#nav {
+    grid-area: nav;
+    align-self: end;
+    display: none;
+}
+
+.icon{
+    background: no-repeat url("./../images/cel-menuBar.png");
+    display: flex;
+    width: 56px;
+    height: 52px;
+}
+
+.item {
+    text-decoration: none;
+    list-style: none;
+}
+.card {
+    margin: 5vw 0;
+    padding: 2vw;
+    border: 1px solid #eeeeee;
+    background-color: #ebebeb;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 88%;
+}
+
+.card p {
+    text-justify: auto;
+}
+
+.card button {
+    margin: 0 0 2vw 2vw;
+    padding: 2vw;
+    text-transform: uppercase;
+}
+
+
+/* média query */
+@media only screen and (min-width: 768px) {
+
+    .card {
+        display: inline-block;
+        width: 26.3%;
+        margin: 1vw;
+        margin-left: 0;
+    }
+
+    .card button {
+        margin: 0 0 2vw 2vw;
+        padding: .5vw 1vw;
+        text-transform: capitalize;
+        float: right;
+    }
+
+
+}
