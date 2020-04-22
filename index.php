@@ -23,6 +23,8 @@ require 'vendor/autoload.php';
         img {
         width: 70%;
         }
+        /* média query */
+@media only screen and (min-width: 260px) {
         .log_container {
         display: flex;
         margin-left: 5vw;
@@ -33,17 +35,12 @@ require 'vendor/autoload.php';
         background: #fff;
         padding-bottom: 5vw;
         }
-        #topo{
-            width: 50vw;
-        align-self: center;
-        }
+
         .login{
         background-color: #ebebeb;
         padding: 2vw;
-        clear: both;
-        width: 50vw;
-        align-self: center;
         }
+
         .rotulo{
         padding: 5px;
         border: none;
@@ -72,7 +69,22 @@ require 'vendor/autoload.php';
         .limpa{
             clear: both
         }
+}
 
+@media only screen and (min-width: 855px) {
+    #topo{
+            width: 54vw;
+        align-self: center;
+        }
+        .login{
+        width: 50vw;
+        align-self: center;
+        }
+        .borda-falsa {
+            width: 54vw;
+        align-self: center;
+        }
+}
 
         /* config para a borda que separa o content do footer */
         .borda-falsa {
@@ -82,9 +94,8 @@ require 'vendor/autoload.php';
         animation-name: borda-falsa;
         animation-duration: .5s;
         animation-iteration-count: infinite;
-        width: 54vw;
-        align-self: center;
         }
+
         @keyframes borda-falsa {
         0% {background: linear-gradient(to right, #910011 100%,#e2001b 0%,#910011 20%);}
         20% {background: linear-gradient(to right, #910011 0%,#e2001b 20%,#910011 40%);}
