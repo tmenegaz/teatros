@@ -21,7 +21,7 @@ require 'vendor/autoload.php';
         font-family: dinotcondregular,"Open Sans", sans-serif, Helvetica;
         }
         img {
-        width: 70%;
+        width: 55%;
         }
         /* média query */
 @media only screen and (min-width: 260px) {
