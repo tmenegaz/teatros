@@ -46,7 +46,7 @@ require 'vendor/autoload.php';
                             Enim eaque exercitationem rerum consequatur aliquam illo
                             ullam nesciunt quas aliquid, minus, illum, voluptas ad?
                         Ducimus, cupiditate molestiae tenetur reiciendis debitis ut.</p>
-                        <button type="submit">Doar</button>
+                        <button type="submit" value="Doar">DOAR</button>
                     </div>
 
                     <div class="card">
@@ -55,7 +55,7 @@ require 'vendor/autoload.php';
                             Enim eaque exercitationem rerum consequatur aliquam illo
                             ullam nesciunt quas aliquid, minus, illum, voluptas ad?
                         Ducimus, cupiditate molestiae tenetur reiciendis debitis ut.</p>
-                        <button type="submit">Doar</button>
+                        <button type="submit" value="Doar">DOAR</button>
                     </div>
 
                     <div class="card">
@@ -64,7 +64,7 @@ require 'vendor/autoload.php';
                             Enim eaque exercitationem rerum consequatur aliquam illo
                             ullam nesciunt quas aliquid, minus, illum, voluptas ad?
                         Ducimus, cupiditate molestiae tenetur reiciendis debitis ut.</p>
-                        <button type="submit">Loja</button>
+                        <button type="submit" value="Loja">LOJA</button>
                     </div>
                     <div class="borda-falsa"></div>
                 </section>

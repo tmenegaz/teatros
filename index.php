@@ -62,6 +62,11 @@ require 'vendor/autoload.php';
         .reset:focus{
             outline:  none;
         }
+
+        .botao:hover{
+            background: #fff;
+        }
+
         .botao {
         float: right;
         padding: 3vw;
@@ -69,7 +74,7 @@ require 'vendor/autoload.php';
         margin-top: 4vw;
         margin-bottom: 2vw;
         border: none;
-
+        text-transform: uppercase;
         border: 1px solid #eeeeee;
         }
 
