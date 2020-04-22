@@ -121,15 +121,15 @@ require 'vendor/autoload.php';
                 <form action="home.php" method="post">
                     <fieldset id="field_n" class="rotulo">
                         <legend id="label_n">Login</legend>
-                        <input class="reset" onclick="formLogin()" type="text" value="" id="nome" placeholder="Nome de acesso">
+                        <input class="reset" onclick="formLogin()" onfocus="formLogin()" type="text" value="" id="nome" placeholder="Nome de acesso">
                     </fieldset>
                     <fieldset id="field_e" class="rotulo">
                         <legend id="label_e">E-mail</legend>
-                        <input class="reset" onclick="formEmail()" type="text" value="" id="email" placeholder="endereço de e-mail">
+                        <input class="reset" onclick="formEmail()" onfocus="formEmail()" type="text" value="" id="email" placeholder="endereço de e-mail">
                     </fieldset>
                     <fieldset id="field_s" class="rotulo">
                         <legend id="label_s">Senha</legend>
-                        <input class="reset" onclick="formSenha()" type="text" value="" id="senha" placeholder="senha: mínimo de 8 caracteres">
+                        <input class="reset" onclick="formSenha()" onfocus="formSenha()" type="text" value="" id="senha" placeholder="senha: mínimo de 8 caracteres">
                     </fieldset>
                     <input class="botao" type="submit" name="cadastro"   value="Cadastrar">
                 </form>
