@@ -17,7 +17,7 @@ require 'vendor/autoload.php';
         margin: 0;
         background-color: #ebebeb;
         box-sizing: border-box;
-        align-content: center;
+        /* align-content: center; */
         font-family: dinotcondregular,"Open Sans", sans-serif, Helvetica;
         }
         img {
