@@ -1,94 +1,129 @@
-<?php 
-    
+<?php
 header('Content-Type: text/html; charset=utf-8');
-
 require 'vendor/autoload.php';
-
- ?>
-
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vila Co(n)vit(e)</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="web/css/style1.css">
+        <script type="text/javascript" src="web/js/nav_button.js"></script>
+        <style>
+        html,
+        body {
+        padding: 0;
+        margin: 0;
+        background-color: #ebebeb;
+        box-sizing: border-box;
+        align-content: center;
+        font-family: dinotcondregular,"Open Sans", sans-serif, Helvetica;
+        }
+        img {
+        width: 70%;
+        }
+        .log_container {
+        display: flex;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 0 5vw;
+        box-sizing: border-box;
+        flex-direction: column;
+        background: #fff;
+        padding-bottom: 5vw;
+        }
+        #topo{
+            width: 50vw;
+        align-self: center;
+        }
+        .login{
+        background-color: #ebebeb;
+        padding: 2vw;
+        clear: both;
+        width: 50vw;
+        align-self: center;
+        }
+        .rotulo{
+        padding: 5px;
+        border: none;
+        transition: all 1s;
+        margin: 4vw;
+        background: #fff;
+        }
+        #label_n, #label_e, #label_s{
+        display: none;
+        }
+        .reset{
+        border: none;
+        height: 5vw;
+        padding-left: 1vw;
+        background: #fff;
+        width: 95%;
+        }
+        .botao {
+        float: right;
+        padding: 1vw;
+        margin-right: 3.6vw;
+        margin-top: 4vw;
+        margin-bottom: 2vw;
+        }
+
+        .limpa{
+            clear: both
+        }
+
+
+        /* config para a borda que separa o content do footer */
+        .borda-falsa {
+        height: .16rem;
+        background: #fff;
+        background: linear-gradient(to right, #910011 100%,#e2001b 0%,#910011 20%);
+        animation-name: borda-falsa;
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+        width: 54vw;
+        align-self: center;
+        }
+        @keyframes borda-falsa {
+        0% {background: linear-gradient(to right, #910011 100%,#e2001b 0%,#910011 20%);}
+        20% {background: linear-gradient(to right, #910011 0%,#e2001b 20%,#910011 40%);}
+        40% {background: linear-gradient(to right, #910011 20%,#e2001b 40%,#910011 60%);}
+        65% {background: linear-gradient(to right, #910011 40%,#e2001b 60%,#910011 80%);}
+        80% {background: linear-gradient(to right, #910011 60%,#e2001b 80%,#910011 100%);}
+        100% {background: linear-gradient(to right, #910011 80%,#e2001b 100%,#910011 0%);}
+        }
+        /* /config */
+        </style>
+
     </head>
     <body>
-
-        <div id="container">
-            <!-- header -->
+        <div class="log_container">
             <div id="topo">
-                <header id="logo">
-                    <img src="images/logo-vila.png"
+                <header>
+                    <img src="web/images/logo-vila.png"
                     alt="Marca do teatro Vila Velha: um sol com um rosto simpático">
-                   <a href="javascript:void(0);" onclick="myFunction()"><i class="icon" ></i> </a>
                 </header>
-                <nav id="nav" class="borda-falsa">
-                    <ul>
-                        <li class="item"><a href="#">Conta</a></li>
-                        <li class="item"><a href="#">Doação</a></li>
-                    </ul>
-                </nav>
             </div>
-            <!-- /header -->
-            <!-- content -->
-            <main id="main-content">
-                <section id="title">
-                    <div class="borda-falsa"></div>
-                    <h1>Formas de ajudar</h1>
-                </section>
-                <section id="content">
-                    <div  class="card">
-                        <h3>Doação em Dinheiro</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Enim eaque exercitationem rerum consequatur aliquam illo
-                            ullam nesciunt quas aliquid, minus, illum, voluptas ad?
-                        Ducimus, cupiditate molestiae tenetur reiciendis debitis ut.</p>
-                        <button type="submit">Doar</button>
-                    </div>
-                    
-                    <div class="card">
-                        <h3>Doação de produto/serviço</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Enim eaque exercitationem rerum consequatur aliquam illo
-                            ullam nesciunt quas aliquid, minus, illum, voluptas ad?
-                        Ducimus, cupiditate molestiae tenetur reiciendis debitis ut.</p>
-                        <button type="submit">Doar</button>
-                    </div>
-                    
-                    <div class="card">
-                        <h3>Comprar produto/serviço</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Enim eaque exercitationem rerum consequatur aliquam illo
-                            ullam nesciunt quas aliquid, minus, illum, voluptas ad?
-                        Ducimus, cupiditate molestiae tenetur reiciendis debitis ut.</p>
-                        <button type="submit">Loja</button>
-                    </div>
-                    <div class="borda-falsa"></div>
-                </section>
-            </main>
-            <!-- /content -->
-            <!-- footer -->
-            <footer id="footer">
-                <div>
-                    <ul>
-                        <li class="item">Ajuda</li>
-                        <li class="item">Sobre</li>
-                    </ul>
-                </div>
-            </footer>
-            <!-- /footer -->
+            <div class="borda-falsa"></div>
+            <div class="login">
+                <form action="home.php" method="post">
+                    <fieldset id="field_n" class="rotulo">
+                        <legend id="label_n">Login</legend>
+                        <input class="reset" onclick="formLogin()" type="text" value="" id="nome" placeholder="Nome de acesso">
+                    </fieldset>
+                    <fieldset id="field_e" class="rotulo">
+                        <legend id="label_e">E-mail</legend>
+                        <input class="reset" onclick="formEmail()" type="text" value="" id="email" placeholder="endereço de e-mail">
+                    </fieldset>
+                    <fieldset id="field_s" class="rotulo">
+                        <legend id="label_s">Senha</legend>
+                        <input class="reset" onclick="formSenha()" type="text" value="" id="senha" placeholder="senha: mínimo de 8 caracteres">
+                    </fieldset>
+                    <input class="botao" type="submit" name="cadastro"   value="Cadastrar">
+                </form>
+            </div>
+                <div class="borda-falsa limpa"></div>
         </div>
-        <script>
-            function myFunction() {
-              var x = document.getElementById("nav");
-              if (x.style.display === "flex") {
-                x.style.display = "none";
-              } else {
-                x.style.display = "flex";
-              }
-            }
-        </script>
     </body>
 </html>
