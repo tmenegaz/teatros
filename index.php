@@ -17,11 +17,11 @@ require 'vendor/autoload.php';
         margin: 0;
         background-color: #ebebeb;
         box-sizing: border-box;
-        /* align-content: center; */
         font-family: dinotcondregular,"Open Sans", sans-serif, Helvetica;
         }
         img {
         width: 55%;
+        margin-left: 2.3vw;
         }
         /* média query */
 @media only screen and (min-width: 260px) {
