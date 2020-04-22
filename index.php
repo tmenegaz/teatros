@@ -60,10 +60,12 @@ require 'vendor/autoload.php';
         }
         .botao {
         float: right;
-        padding: 1vw;
+        padding: 3vw;
         margin-right: 3.6vw;
         margin-top: 4vw;
         margin-bottom: 2vw;
+        border: none;
+
         border: 1px solid #eeeeee;
         }
 
