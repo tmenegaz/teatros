@@ -19,6 +19,7 @@ body {
     width: auto;
     align-self: flex-end;
     margin-right: 1vw;
+    outline: none;
 }
 
 #nav ul {
@@ -129,12 +130,17 @@ img {
     background-position-y: bottom;
 }
 
+/*  a {text-decoration: none;
+
+    color: inherit;
+    outline: none;
+}
 .icon::-moz-focus-inner, #logo a::-moz-focus-inner,
 .icon:visited, #logo a:visited,
 .icon:active, #logo a:active {
     border: none;
     outline: none;
-}
+} */
 
 
 .item {
