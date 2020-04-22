@@ -29,6 +29,7 @@ require 'vendor/autoload.php';
                     <ul>
                         <li class="item"><a href="#">Conta</a></li>
                         <li class="item"><a href="#">Doação</a></li>
+                        <li class="item"><a href="#">Sair</a></li>
                     </ul>
                 </nav>
             </div>

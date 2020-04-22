@@ -18,6 +18,7 @@ body {
     height: 100%;
     width: auto;
     align-self: flex-end;
+    margin-right: 1vw;
 }
 
 #nav ul {
@@ -25,7 +26,8 @@ body {
     justify-content: space-around;
     padding: 0;
     width: 100%;
-
+    flex-direction: column;
+    padding-right: 1vw;
 }
 
 img {
@@ -116,16 +118,30 @@ img {
     display: none;
 }
 
+
 .icon{
     background: no-repeat url("./../images/cel-menuBar.png");
     display: flex;
     width: 56px;
     height: 52px;
+    background-size: 60%;
+    background-position-x: right;
+    background-position-y: bottom;
 }
+
+.icon::-moz-focus-inner, #logo a::-moz-focus-inner,
+.icon:visited, #logo a:visited,
+.icon:active, #logo a:active {
+    border: none;
+    outline: none;
+}
+
 
 .item {
     text-decoration: none;
     list-style: none;
+    align-self: end;
+    padding-bottom: 6vw;: 
 }
 .card {
     margin: 5vw 0;
