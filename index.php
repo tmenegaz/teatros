@@ -58,6 +58,10 @@ require 'vendor/autoload.php';
         background: #fff;
         width: 95%;
         }
+
+        .reset:focus{
+            outline:  none;
+        }
         .botao {
         float: right;
         padding: 3vw;
