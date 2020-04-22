@@ -64,6 +64,7 @@ require 'vendor/autoload.php';
         margin-right: 3.6vw;
         margin-top: 4vw;
         margin-bottom: 2vw;
+        border: 1px solid #eeeeee;
         }
 
         .limpa{
