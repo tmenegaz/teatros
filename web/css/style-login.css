@@ -1,0 +1,64 @@
+/* média query */
+@media only screen and (min-width: 260px) {
+        .log_container {
+        display: flex;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 0 5vw;
+        box-sizing: border-box;
+        flex-direction: column;
+        background: #fff;
+        padding-bottom: 5vw;
+        }
+
+        .login{
+        background-color: #ebebeb;
+        padding: 2vw;
+        }
+
+        .rotulo{
+        padding: 5px;
+        border: none;
+        transition: all 1s;
+        margin: 4vw;
+        background: #fff;
+        }
+        #label_n, #label_e, #label_s{
+        display: none;
+        }
+        .reset{
+        border: none;
+        height: 5vw;
+        padding-left: 1vw;
+        background: #fff;
+        width: 95%;
+        }
+
+        .reset:focus{
+            outline:  none;
+        }
+
+        .botao-cadastro{
+            float: left;
+            margin-left: 4vw;
+        }    
+
+        .botao-login{
+            margin-right: 4vw;
+        }
+}
+
+@media only screen and (min-width: 901px) {
+    #topo-login{
+            width: 54vw;
+        align-self: center;
+        }
+        .login{
+        width: 53vw;
+        align-self: center;
+        }
+        .borda-falsa-login {
+            width: 57vw;
+        align-self: center;
+        }
+}

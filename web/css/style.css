@@ -140,16 +140,23 @@ body {
         text-justify: auto;
     }
 
-    .card button {
+    .botao {
         margin: 0 0 2vw 0vw;
         padding: 3vw;
         text-transform: uppercase;
         border: 1px solid #eeeeee;
+        outline: none;
         float: right;
-
     }
 
-    .card button:hover{
+    .botao::-moz-focus-inner,
+    .botao:visited,
+    .botao:active {
+        border: none;
+        outline: none;
+    }
+
+    .botao:hover{
         background: #fff;
     }
     /* /grid #main-content */
@@ -202,7 +209,7 @@ body {
         width: 32%;
     }
 
-    .card button{
+    .botao{
         padding: 1.5vw;        
     }
 }
