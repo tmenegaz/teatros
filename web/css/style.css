@@ -8,82 +8,15 @@ body {
     font-family: dinotcondregular,"Open Sans", sans-serif, Helvetica;
 }
 
-#logo {
-	display: flex;
-	justify-content: space-between;
-    margin-bottom: 1vw;
-}
-
-#logo a {
-    height: 100%;
-    width: auto;
-    align-self: flex-end;
-    margin-right: 1vw;
-    outline: none;
-}
-
-#nav ul {
-    display: inherit;
-    justify-content: space-around;
-    padding: 0;
-    width: 100%;
-    flex-direction: column;
-    padding-right: 1vw;
-}
-
-img {
-    width: 55%;
-    margin-left: -4.1vw;
-}
-
-
-/* média query */
-@media only screen and (min-width: 260px) {
-
-    #container {
-        display: grid;
-        background-color: #fff;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        padding: 0 5vw;
-        grid-template-areas: "topo"
-            "main-content"
-            "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-    }
-
-    #topo {
-        grid-area: topo;
-        overflow: hidden;
-    }
-
-    #main-content{
-        grid-area: main-content;
-        display: grid;
-        grid-template-areas: "title"
-        "content";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    #footer {
-        grid-area: footer;
-    }
-}
-
-#title{
-    grid-area: title;
-}
-
-#content{
-    grid-area: content;
+.limpa{
+    clear: both
 }
 
 
 /* config para a borda que separa o content do footer */
 .borda-falsa {
     height: .16rem;
+    width: 100%;
     background: #fff;
     background: linear-gradient(to right, #910011 100%,#e2001b 0%,#910011 20%);
     animation-name: borda-falsa;
@@ -101,101 +34,180 @@ img {
 }
 /* /config */
 
-#left {
-    grid-area: left;
-}
-
-#center {
-    grid-area: center;
-}
-
-#right {
-    grid-area: right;
-}
-
-#nav {
-    grid-area: nav;
-    align-self: end;
-    display: none;
-}
-
-
-.icon{
-    background: no-repeat url("./../images/cel-menuBar.png");
-    display: flex;
-    width: 56px;
-    height: 52px;
-    background-size: 60%;
-    background-position-x: right;
-    background-position-y: bottom;
-}
-
-/*  a {text-decoration: none;
-
-    color: inherit;
-    outline: none;
-}
-.icon::-moz-focus-inner, #logo a::-moz-focus-inner,
-.icon:visited, #logo a:visited,
-.icon:active, #logo a:active {
-    border: none;
-    outline: none;
-} */
-
-
-.item {
-    text-decoration: none;
-    list-style: none;
-    align-self: end;
-    padding-bottom: 6vw;: 
-}
-.card {
-    margin: 5vw 0;
-    padding: 2vw;
-    border: 1px solid #eeeeee;
-    background-color: #ebebeb;
-}
-
-.card h3 {
-    text-align: center;
-    font-size: 88%;
-}
-
-.card p {
-    text-justify: auto;
-}
-
-.card button {
-    margin: 0 0 2vw 2vw;
-    padding: 2vw;
-    border: none;
-    text-transform: uppercase;
-    border: 1px solid #eeeeee;
-}
-
-
-
-.card button:hover{
-    background: #fff;
-}
-
-
 /* média query */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 260px) {
+
+    #container {
+        display: grid;
+        background-color: #fff;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 0 5vw;
+        grid-template-areas: "topo"
+            "main-content"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    /* topo da página */
+    #topo {
+        grid-area: topo;
+        display: flex;
+        margin-bottom: 1vw;
+        align-items: end;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+     /* item do topo */
+    .logo-img {
+        width: 55%;
+        margin-left: -4.1vw;
+    }
+
+     /* item do topo */
+    .toggle {
+        height: auto;
+        width: auto;
+        align-self: flex-end;
+        margin-right: 1vw;
+        outline: none;
+    }
+
+     /* item do topo */
+    .menu-list {
+        display: none;
+        justify-content: space-around;
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+        padding-right: 1vw;
+    }
+
+    .icon{
+        background: no-repeat url("./../images/cel-menuBar.png");
+        display: inherit;
+        width: 56px;
+        height: 52px;
+        background-size: 60%;
+        background-position-x: right;
+        background-position-y: bottom;
+    }
+
+    .item {
+        text-decoration: none;
+        list-style: none;
+        align-self: end;
+        padding-top: 5vw;: 
+    }
+    /* /topo da página */
+
+    #main-content{
+        grid-area: main-content;
+        display: grid;
+        grid-template-areas: "title"
+        "content";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    /* grid #main-content */
+
+    #title{
+        grid-area: title;
+    }
+
+    #content{
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+    }
 
     .card {
-        display: inline-block;
-        width: 26.3%;
-        margin: 1vw;
-        margin-left: 0;
+        margin: 5vw 0;
+        padding: 2vw;
+        border: 1px solid #eeeeee;
+        background-color: #ebebeb;
+    }
+
+    .card h3 {
+        text-align: center;
+        font-size: 88%;
+    }
+
+    .card p {
+        text-justify: auto;
     }
 
     .card button {
-        margin: 0 0 2vw 2vw;
-        padding: .5vw 1vw;
-        text-transform: capitalize;
+        margin: 0 0 2vw 0vw;
+        padding: 3vw;
+        text-transform: uppercase;
+        border: 1px solid #eeeeee;
         float: right;
+
     }
 
+    .card button:hover{
+        background: #fff;
+    }
+    /* /grid #main-content */
 
+
+    #footer {
+        grid-area: footer;
+    }
 }
+
+
+
+/* média query */
+@media only screen and (min-width: 901px) {
+    
+    .toggle{
+        display: none;
+        visibility: collapse
+    }
+
+    #nav {
+        display: flex;
+        
+    }
+
+    .menu-list {
+        visibility: visible;
+        flex-direction: row;
+        width: 48%;
+        align-self: end;
+        margin-bottom: 0;
+
+    }
+
+    .item{
+        padding-bottom: 1vw;
+    }
+
+    #content{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 1vw;
+        margin: 0 .5vw 2vw;
+        width: 32%;
+    }
+
+    .card button{
+        padding: 1.5vw;        
+    }
+}
+
+
+/* itens de ordem geral */
+
+

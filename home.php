@@ -15,23 +15,19 @@ require 'vendor/autoload.php';
         <link rel="stylesheet" href="web/css/style.css">
         <script type="text/javascript" src="web/js/nav_button.js"></script>
     </head>
-    <body>
+    <body onresize="resetDisplay()">
 
         <div id="container">
             <!-- header -->
             <div id="topo">
-                <header id="logo">
-                    <img src="web/images/logo-vila.png"
+                <img class="logo-img" src="web/images/logo-vila.png"
                     alt="Marca do teatro Vila Velha: um sol com um rosto simpático">
-                   <a href="javascript:void(0);" onclick="myFunction()"><i class="icon" ></i> </a>
-                </header>
-                <nav id="nav">
-                    <ul>
-                        <li class="item"><a href="#">Conta</a></li>
-                        <li class="item"><a href="#">Doação</a></li>
-                        <li class="item"><a href="#">Sair</a></li>
-                    </ul>
-                </nav>
+                <a class="toggle" id="toggle_botao" href="javascript:void(0);" onclick="myFunction()"><i class="icon" ></i></a>
+                <ul id="nav" class="menu-list">
+                    <li class="item"><a href="#">Conta</a></li>
+                    <li class="item"><a href="#">Doação</a></li>
+                    <li class="item"><a href="#">Sair</a></li>
+                </ul>
             </div>
             <!-- /header -->
             <!-- content -->
@@ -47,7 +43,7 @@ require 'vendor/autoload.php';
                             Enim eaque exercitationem rerum consequatur aliquam illo
                             ullam nesciunt quas aliquid, minus, illum, voluptas ad?
                         Ducimus, cupiditate molestiae tenetur reiciendis debitis ut.</p>
-                        <button type="submit" value="Doar">DOAR</button>
+                        <button type="submit" value="">DOAR</button>
                     </div>
 
                     <div class="card">
@@ -56,7 +52,7 @@ require 'vendor/autoload.php';
                             Enim eaque exercitationem rerum consequatur aliquam illo
                             ullam nesciunt quas aliquid, minus, illum, voluptas ad?
                         Ducimus, cupiditate molestiae tenetur reiciendis debitis ut.</p>
-                        <button type="submit" value="Doar">DOAR</button>
+                        <button type="submit" value="">DOAR</button>
                     </div>
 
                     <div class="card">
@@ -65,9 +61,9 @@ require 'vendor/autoload.php';
                             Enim eaque exercitationem rerum consequatur aliquam illo
                             ullam nesciunt quas aliquid, minus, illum, voluptas ad?
                         Ducimus, cupiditate molestiae tenetur reiciendis debitis ut.</p>
-                        <button type="submit" value="Loja">LOJA</button>
+                        <button type="submit" value="">LOJA</button>
                     </div>
-                    <div class="borda-falsa"></div>
+                    <div class="borda-falsa limpa"></div>
                 </section>
             </main>
             <!-- /content -->

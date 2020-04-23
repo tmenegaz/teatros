@@ -83,7 +83,7 @@ require 'vendor/autoload.php';
         }
 }
 
-@media only screen and (min-width: 855px) {
+@media only screen and (min-width: 901px) {
     #topo{
             width: 54vw;
         align-self: center;
