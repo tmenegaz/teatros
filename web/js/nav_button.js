@@ -1,3 +1,32 @@
+function funCad(){
+  var escolha = document.getElementById("escolha");
+  var cadastro = document.getElementById("cadastro");
+  if(cadastro.style.display === "" || cadastro.style.display === "none"){
+    cadastro.style.display = "block";
+    escolha.style.display = "none";
+  }
+}
+
+function funLogin(){
+  var escolha = document.getElementById("escolha");
+  var login = document.getElementById("login");
+  if(login.style.display === "" || login.style.display === "none"){
+    login.style.display = "block";
+    escolha.style.display = "none";
+  }
+}
+
+function funCancela(){
+  var escolha = document.getElementById("escolha");
+  var cadastro = document.getElementById("cadastro");
+  var login = document.getElementById("login");
+  if(cadastro.style.display === "block" || login.style.display === "block"){
+    cadastro.style.display = "none";
+    login.style.display = "none";
+    escolha.style.display = "flex";
+  }
+}
+
 
 function myFunction() {
   var nave = document.getElementById("nav");
@@ -34,6 +63,24 @@ function formLogin() {
   }
 }
 
+function formLogin_l() {
+  var field_l = document.getElementById("field_nl");
+  var legenda_l = document.getElementById("label_nl");
+  var nome_l = document.getElementById("nome_l");
+  if(nome_l.value == "" || legenda_l.style.display == "none"){
+    run(nome_l, legenda_l, field_l);
+  }
+}
+
+function formCel() {
+  var field = document.getElementById("field_t");
+  var legenda = document.getElementById("label_t");
+  var tel = document.getElementById("tel");
+  if(tel.value == "" || legenda.style.display == "none"){
+    run(tel, legenda, field);
+  }
+}
+
 function formEmail() {
   var field = document.getElementById("field_e");
   var legenda = document.getElementById("label_e");
@@ -49,6 +96,15 @@ function formSenha() {
   var senha = document.getElementById("senha");
   if(senha.value == "" || legenda.style.display == "none"){
     run(senha, legenda, field);
+  }
+}
+
+function formSenha_l() {
+  var field_l = document.getElementById("field_sl");
+  var legenda_l = document.getElementById("label_sl");
+  var senha_l = document.getElementById("senha_l");
+  if(senha_l.value == "" || legenda_l.style.display == "none"){
+    run(senha_l, legenda_l, field_l);
   }
 }
 

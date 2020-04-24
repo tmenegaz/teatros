@@ -11,9 +11,29 @@
         padding-bottom: 5vw;
         }
 
-        .login{
-        background-color: #ebebeb;
-        padding: 2vw;
+        #escolha{
+            display: flex;
+            visibility: visible;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        #escolha .botao{
+            margin-top: 2vw;
+        }
+
+        #cadastro{
+            display: none;
+        }
+
+        #login{
+            display: none;
+        }
+
+        .form-in{
+            background-color: #ebebeb;
+            padding: 2vw;
         }
 
         .rotulo{
@@ -23,7 +43,7 @@
         margin: 4vw;
         background: #fff;
         }
-        #label_n, #label_e, #label_s{
+        #label_n, #label_e, #label_s, #label_t, #label_nl, #label_sl{
         display: none;
         }
         .reset{
@@ -38,27 +58,35 @@
             outline:  none;
         }
 
-        .botao-cadastro{
-            float: left;
-            margin-left: 4vw;
+        .botao-acao{
+            float: right;
+            margin-right: 4vw;
         }    
 
-        .botao-login{
-            margin-right: 4vw;
+        .botao-cancela{
+            float: left;
+            margin-left: 4vw;
+
         }
 }
 
 @media only screen and (min-width: 901px) {
     #topo-login{
-            width: 54vw;
+        width: 54vw;
         align-self: center;
-        }
-        .login{
+    }
+
+    #escolha{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .form-in{
         width: 53vw;
         align-self: center;
-        }
-        .borda-falsa-login {
-            width: 57vw;
+    }
+    .borda-falsa-login {
+        width: 57vw;
         align-self: center;
-        }
+    }
 }
