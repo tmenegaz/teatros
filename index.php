@@ -85,5 +85,9 @@ require 'vendor/autoload.php';
 
             <div class="borda-falsa borda-falsa-login limpa"></div>
 
+            <div class="marca-p">
+                <h1>ArtistaSOS</h1>
+            </div>
+
     </body>
 </html>
