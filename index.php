@@ -69,7 +69,7 @@ require 'vendor/autoload.php';
                 <button onclick="funLogin()" class="botao bt-escolha bt-sys" type="button">Entrar</button>
             </div>
 
-            <div id="escolha" class="form-in">
+            <div id="escolha" class="form-in abaixo">
 
                 <div class="separador">
                     <div class="borda-falsa separador-item limpa"></div>
@@ -80,9 +80,10 @@ require 'vendor/autoload.php';
                 <button class="botao bt-escolha bt-rs">Cadastrar/Entrar com Google</button>
                 <button class="botao bt-escolha bt-rs">Cadastrar/Entrar com Faceboock</button>
 
-                <div class="borda-falsa borda-falsa-login limpa"></div>
 
             </div>
+
+            <div class="borda-falsa borda-falsa-login limpa"></div>
 
     </body>
 </html>

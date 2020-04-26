@@ -67,6 +67,10 @@
             margin-left: 4vw;
         }
 
+        .abaixo{
+            padding-top: 0;
+        }
+
         .separador{
             display: flex;
             justify-content: center;
