@@ -102,7 +102,7 @@
 
         .marca-p h1{
             text-align: center;
-            background: -webkit-linear-gradient(#910011 33%,#e2001b 33%,#910011 33%);
+            background: -webkit-linear-gradient(#e2001b, #910011);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }

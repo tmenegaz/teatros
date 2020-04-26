@@ -26,7 +26,7 @@ require 'vendor/autoload.php';
                 <ul id="nav" class="menu-list">
                     <li class="item"><a href="#">Conta</a></li>
                     <li class="item"><a href="#">Doação</a></li>
-                    <li class="item"><a href="#">Sair</a></li>
+                    <li class="item"><a href="index.php">Sair</a></li>
                 </ul>
             </div>
             <!-- /header -->
