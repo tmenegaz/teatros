@@ -72,15 +72,6 @@ function formLogin_l() {
   }
 }
 
-function formCel() {
-  var field = document.getElementById("field_t");
-  var legenda = document.getElementById("label_t");
-  var tel = document.getElementById("tel");
-  if(tel.value == "" || legenda.style.display == "none"){
-    run(tel, legenda, field);
-  }
-}
-
 function formEmail() {
   var field = document.getElementById("field_e");
   var legenda = document.getElementById("label_e");
@@ -110,6 +101,8 @@ function formSenha_l() {
 
 var run = function(nome, legenda, field){
   nome.style.border = "none";
+  nome.getAttribute('placeholder');
+  nome.placeholder = "";
 	legenda.style.display = 'block';
 	field.style.margin = '3.2vw';
   field.style.border = "1px solid #eeeeee";

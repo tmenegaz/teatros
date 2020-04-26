@@ -1,3 +1,5 @@
-.reset:focus {
+.separador-item {
+    align-items: start;
+}.borda-falsa.separador_l.limpa {}.borda-falsa.separador_r.limpa {}.reset:focus {
     outline: none;
 }

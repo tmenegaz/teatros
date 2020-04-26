@@ -1,19 +1,20 @@
 /* média query */
 @media only screen and (min-width: 260px) {
         .log_container {
-            display: flex;
-            margin-left: 5vw;
-            margin-right: 5vw;
-            padding: 0 5vw;
-            box-sizing: border-box;
-            flex-direction: column;
-            background: #fff;
-            padding-bottom: 5vw;
-            }
+        display: flex;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 0 5vw;
+        box-sizing: border-box;
+        flex-direction: column;
+        background: #fff;
+        padding-bottom: 5vw;
+        }
 
         #escolha{
             display: flex;
             visibility: visible;
+            align-content: center;
             flex-wrap: wrap;
             flex-direction: column;
         }
@@ -36,22 +37,22 @@
         }
 
         .rotulo{
-            padding: 5px;
-            border: none;
-            transition: all 1s;
-            margin: 4vw;
-            background: #fff;
-            }
+        padding: 5px;
+        border: none;
+        transition: all 1s;
+        margin: 4vw;
+        background: #fff;
+        }
         #label_n, #label_e, #label_s, #label_t, #label_nl, #label_sl{
-            display: none;
-            }
+        display: none;
+        }
         .reset{
-            border: none;
-            height: 5vw;
-            padding-left: 1vw;
-            background: #fff;
-            width: 95%;
-            }
+        border: none;
+        height: 5vw;
+        padding-left: 1vw;
+        background: #fff;
+        width: 95%;
+        }
 
         .reset:focus{
             outline:  none;
@@ -65,37 +66,22 @@
         .botao-cancela{
             float: left;
             margin-left: 4vw;
+
         }
 
-        .separador{
+        .separador_l{
+            width: 16%;
+            display: flex;
+            justify-content: start;
+        }
+
+        .separador_r{
+            width: 48%;
             display: flex;
             justify-content: center;
-            align-items: baseline;
-            width: 100%;
+            margin: 5vw;
+            align-self: center;
         }
-        .separador-item span{
-            margin: 0 2vw;
-            font-style: italic;
-        }
-
-        .bt-sys{
-            margin-bottom: .5vw;
-        }
-
-        .bt-rs{
-            background-color: #fff;
-        }
-
-        .aceite{
-            font-size: .5rem;
-            margin: 4vw;
-        }
-        
-        .ck-connect{
-            margin: 4vw;
-            font-size: 1rem;
-        }
-
 }
 
 @media only screen and (min-width: 901px) {
