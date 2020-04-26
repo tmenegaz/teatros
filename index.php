@@ -39,9 +39,9 @@ require 'vendor/autoload.php';
                         <input class="reset" onclick="formSenha()" onfocus="formSenha()" type="password" value="" id="senha" placeholder="Senha: mínimo de 8 caracteres">
                     </fieldset>
                     <button class="botao botao-cancela" type="button" form="escolha" onclick="funCancela()">Cancelar</button>
-                    <button class="botao botao-acao" type="submit">Aceitar/Cadastrar</button>
+                    <button class="botao botao-acao" type="submit">Criar</button>
                 </form>
-                <p class="aceite limpa">Voçê aceita o <a href="#">contrato do Usuário</a>, a <a href="#">Política de Privacidade</a> e a <a href="#">Política de Cookies</a> do ArtistaSOS. Para cadastros feitos com o número de telefone, será enviado um código de verificação por SMS.</p>
+                <p class="aceite limpa">Ao clicar em Criar você aceita o <a href="#">contrato do Usuário</a>, a <a href="#">Política de Privacidade</a> e a <a href="#">Política de Cookies</a> do ArtistaSOS. Para cadastros feitos com o número de telefone, será enviado um código de verificação por SMS.</p>
             </div>
 
             <div id="login" class="form-in">
